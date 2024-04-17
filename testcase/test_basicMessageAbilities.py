@@ -18,4 +18,3 @@ class TestBasicMessage:
             "msgtype": "text"
         }
         res = RequestUtil().all_send_request(method='post',url=url, json=dates)
-        print(read_yaml('access_token'))
