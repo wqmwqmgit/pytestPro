@@ -12,7 +12,7 @@
   validate: null
 
 -
-  feature: 模块2    #注释11112223333
+  feature: 模块2    #注释github
   story: 接口2
   titile: 验证appid异常
   request:
