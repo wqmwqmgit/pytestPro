@@ -9,10 +9,11 @@
       grant_type: client_credential
       appid: wxaa666e3ee0f3cf54
       secret: d16004d19f8a85d02b1d9c5e93f06bc2
+      assertCode: 200
   validate: null
 
 -
-  feature: 模块2    #注释11112223333
+  feature: 模块2    #注释github
   story: 接口2
   titile: 验证appid异常
   request:
@@ -22,4 +23,5 @@
       grant_type: client_credential
       appid: null
       secret: d16004d19f8a85d02b1d9c5e93f06bc2
+      assertCode: 41002
   validate: ull

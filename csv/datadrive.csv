@@ -1,0 +1,3 @@
+method,url,grant_type,appid,secret,assertCode
+get,https://api.weixin.qq.com/cgi-bin/token?,client_credential,wxaa666e3ee0f3cf54,d16004d19f8a85d02b1d9c5e93f06bc2,200
+get,https://api.weixin.qq.com/cgi-bin/token?,client_credential,,d16004d19f8a85d02b1d9c5e93f06bc2,41003

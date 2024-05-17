@@ -1,7 +1,9 @@
+import csv
 
 import pytest
 
 from common.yaml_util import clear_yaml
+from common.csv_util import readCsv
 
 
 # from common.yaml_util import clear_yaml
@@ -17,6 +19,9 @@ def exe_sql(request):
 @pytest.fixture(scope='session',autouse=True)
 def clearyaml():
     clear_yaml()
+
+
+
 
 
 

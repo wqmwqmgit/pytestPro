@@ -13,6 +13,7 @@ class TestUserManage:
         url = casedata['request']['url']
         dates = casedata['request']['params']
         method = casedata['request']['method']
+        assertCode = casedata['request']['params']['assertCode']
         # dates = {
         #     'grant_type': 'client_credential',
         #     'appid': 'wxaa666e3ee0f3cf54',
@@ -25,6 +26,9 @@ class TestUserManage:
             # 获取access_token，写入到yaml文件
             dict = {'access_token': access_token[0]}
             write_yaml(dict)
+            assert assertCode == 200
+        else:
+            assert assertCode == 41003
 
 
     @pytest.mark.usermanager
