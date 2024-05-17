@@ -19,3 +19,13 @@ def read_yaml(key):
 def clear_yaml():
     with open(os.getcwd()+"/extra.yaml",encoding="utf-8",mode="w") as f:
         f.truncate()
+
+
+#读取
+def read_testdata(path):
+    with open(path,encoding="utf-8",mode="r") as f:
+        value = yaml.load(f,yaml.FullLoader)
+        return value
+
+
+

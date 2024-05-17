@@ -17,3 +17,7 @@ def exe_sql(request):
 @pytest.fixture(scope='session',autouse=True)
 def clearyaml():
     clear_yaml()
+
+
+
+
