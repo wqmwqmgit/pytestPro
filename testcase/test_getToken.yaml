@@ -1,0 +1,25 @@
+-
+  feature: 模块
+  story: 接口
+  titile: 成功的获取鉴权码token
+  request:
+    method: get
+    url: https://api.weixin.qq.com/cgi-bin/token?
+    params:
+      grant_type: client_credential
+      appid: wxaa666e3ee0f3cf54
+      secret: d16004d19f8a85d02b1d9c5e93f06bc2
+  validate: null
+
+-
+  feature: 模块2    #注释
+  story: 接口2
+  titile: 验证appid异常
+  request:
+    method: get
+    url: https://api.weixin.qq.com/cgi-bin/token?
+    params:
+      grant_type: client_credential
+      appid: null
+      secret: d16004d19f8a85d02b1d9c5e93f06bc2
+  validate: ull
