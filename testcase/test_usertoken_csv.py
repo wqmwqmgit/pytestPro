@@ -18,15 +18,11 @@ class TestUserManage:
         url = casedata['url']
         print(url)
         method = casedata['method']
-        grant_type = casedata['grant_type']
-        appid = casedata['appid']
-        secret = casedata['secret']
         assertCode = casedata['assertCode']
-
         datas = {
-            'grant_type': grant_type,
-            'appid': appid,
-            'secret': secret
+            'grant_type': casedata['grant_type'],
+            'appid': casedata['appid'],
+            'secret': casedata['secret']
         }
 
         res = RequestUtil().all_send_request(method=method,url=url, params=datas)
